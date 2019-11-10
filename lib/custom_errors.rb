@@ -11,7 +11,7 @@ class Person
       begin
         raise PartnerError
       rescue PartnerError => error
-        puts error.message
+          puts error.message
       end
     else
       person.partner = self
@@ -23,7 +23,6 @@ class Person
       "you must give the get_married method an argument of an instance of the person class!"
     end
   end
-
 end
 
 beyonce = Person.new("Beyonce")
